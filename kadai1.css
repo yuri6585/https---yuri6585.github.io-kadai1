@@ -83,7 +83,7 @@ header
   width: auto;
 }
 
- @media screen and (max-width: 767px){
+@media screen and (max-width: 767px){
 .HeaderLogo_image--pc
 {
   display: none;
@@ -109,7 +109,7 @@ header
   display: inline-flex;
 }
 
-/* @media screen and (max-width: 1080px){
+@media screen and (max-width: 1080px){
 .HeaderNavHamburger
 {
   cursor: pointer;
@@ -119,6 +119,10 @@ header
   height: 21px;
   z-index: 100;
 }
+}
+
+.HeaderNavHamburger{
+  display: none;
 }
 
 @media screen and (max-width: 1080px){
@@ -171,7 +175,6 @@ header
   height: 100%;
 }
 }
- */
 
 .HeaderNavList
 {
@@ -189,7 +192,7 @@ ul, ol
 ul
 {
   display: block;
-  list-style-type: disc;
+  list-style-type: none;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -199,7 +202,8 @@ ul
 
 li
 {
-display: list-item;
+
+list-style-type: none;
 text-align: -webkit-match-parent;
 }
 
@@ -590,6 +594,7 @@ p{
 @media screen and (max-width: 1024px){
 .About{
   flex-direction: column;
+}
 }
 
 @media screen and (max-width: 767px){
