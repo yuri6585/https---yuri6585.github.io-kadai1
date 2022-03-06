@@ -15,7 +15,11 @@ body
   font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 14px;
   font-weight: 500;
-  -webkit-font-smooting: antialiased;
+
+}
+
+body{
+  -webkit-font-smoothing: antialiased;
 }
 
 *, *::before, *::after
@@ -30,6 +34,9 @@ body
 
 .Header
 {
+position: absolute;
+padding-top: 20px;
+padding-bottom: 20px;
 width: 100%;
 }
 
@@ -80,9 +87,21 @@ margin: 0 20px;
 }
 }
 
+@media screen and (min-width: 768px){
+.HeaderLogo:hover {
+opacity: 0.8;
+}
+}
+
+@media screen and (min-width: 768px){
+.HeaderLogo {
+  transition: opacity 0.2s;
+}
+}
+
  .HeaderLogo_image--pc
 {
-  display: block;
+
   height: 20px;
   width: auto;
 }
@@ -315,8 +334,17 @@ width: 250px;
   padding: 0 20px;
 }
 
+@media screen and (min-width: 768px){
+.HeaderNavListItem_button {
+transition: opacity 0.2s;
+}
+}
 
-
+@media screen and (min-width: 768px){
+.HeaderNavListItem_button:hover {
+opacity: 0.8;
+}
+}
 
 @media screen and (max-width: 767px){
 main{
@@ -536,6 +564,12 @@ width: 100% !important;
 }
 }
 
+@media screen and (min-width: 768px){
+.FirstView_content_buttons a:hover
+{
+  opacity: 0.8;
+}
+}
 
 .FirstView_content_buttons a:first-of-type
 {
@@ -755,6 +789,18 @@ margin-top: 40px;
   background-color: #fff;
 }
 
+@media screen and (min-width: 768px){
+.About_button a:hover {
+  opacity: 0.8;
+}
+}
+
+@media screen and (min-width: 768px){
+.About_button a {
+  transition: opacity 0.2s;
+}
+}
+
 .About_button a span:first-child{
   font-family: 'Lato', sans-serif;
   font-size: 24px;
@@ -782,4 +828,5 @@ a:-webkit-any-link
 div
 {
   display: block;
+
 }
